@@ -62,7 +62,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #000;
-  --bs-body-bg: #008ACD;
+  --bs-body-bg: #E8EBED;
 }
 
 *,
@@ -240,7 +240,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #008ACD;
+  color: #E8EBED;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -5082,11 +5082,11 @@ textarea.form-control-lg {
   z-index: 1;
   color: #FFF99F;
   text-decoration: none;
-  background-color: #008ACD;
+  background-color: #E8EBED;
 }
 .list-group-item-action:active {
   color: #212529;
-  background-color: #008ACD;
+  background-color: #E8EBED;
 }
 
 .list-group-item {
@@ -5095,7 +5095,7 @@ textarea.form-control-lg {
   padding: 0.5rem 1rem;
   color: #000;
   text-decoration: none;
-  background-color: #008ACD;
+  background-color: #E8EBED;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 .list-group-item:first-child {
