@@ -249,7 +249,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 }
 
 .hover_img a { position:relative; }
-.hover_img a span { position:absolute; display:none; z-index:99; }
+.hover_img a span { position:absolute; top: 0px; left:400px; display:none; z-index:99; }
 .hover_img a:hover span { display:block; }
 
 pre,
@@ -315,7 +315,7 @@ caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   color: #6c757d;
-  text-align: center;
+  text-align: left;
 }
 
 th {
