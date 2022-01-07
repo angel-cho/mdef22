@@ -11363,7 +11363,8 @@ h1 {
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
+  width: 60%;
+  padding: px;
   display: ; /* Hide columns by default */
 }
 
