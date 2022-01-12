@@ -58,7 +58,123 @@
                             There were four motors, two circuit boards, many infrared sensors, and many touch sensors. Wtih the discovery of every piece, we took time to discuss its use and look up the parts.
                             We concluded that some of these individual components were fairly simple in their function and mechanical composition, but also very complex engineering and producing each component.
                             <br><br>
-                              <mark>You can see the full forensic report <a href="https://hackmd.io/INk2gThpSkObQQ_E62gxow?view">here</a>.</mark>
+
+                            <body>
+                                <div id="doc" class="markdown-body container-fluid comment-enabled comment-inner" data-hard-breaks="true"><h1 id="Obsolescence-Forensic-Report--iRobot-Roomba" data-id="Obsolescence-Forensic-Report--iRobot-Roomba"><a class="anchor hidden-xs" href="#Obsolescence-Forensic-Report--iRobot-Roomba" title="Obsolescence-Forensic-Report--iRobot-Roomba"><span class="octicon octicon-link"></span></a><span>Obsolescence Forensic Report : iRobot Roomba</span></h1><p><img src="https://i.imgur.com/zqTtOcY.jpg" alt="" width="730" loading="lazy"></p><table>
+                            <thead>
+                            <tr>
+                            <th><span>Identity of the reporting agency</span></th>
+                            <th><span>MDEF</span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td><span>Case identifier</span></td>
+                            <td><span>Forensics of the Obsolescence</span></td>
+                            </tr>
+                            <tr>
+                            <td><span>Identity of the submitter</span></td>
+                            <td><span>Someone at the Fab Lab</span></td>
+                            </tr>
+                            <tr>
+                            <td><span>Date of receipt</span></td>
+                            <td><span>09/11/2021</span></td>
+                            </tr>
+                            <tr>
+                            <td><span>Date of report</span></td>
+                            <td><span>09/11/2021</span></td>
+                            </tr>
+                            <tr>
+                            <td><span>Identity and signature of the examiner</span></td>
+                            <td><span>Joaquin, Roberto, Dídac, Angel, Audrey</span></td>
+                            </tr>
+                            </tbody>
+                            </table><h2 id="Examination" data-id="Examination"><a class="anchor hidden-xs" href="#Examination" title="Examination"><span class="octicon octicon-link"></span></a><span>Examination</span></h2><div class="alert alert-warning">
+                            <p><span>Serial number: 4256967 1-2</span><br>
+                            <span>Brand: iRobot</span><br>
+                            <span>Model: Roomba 500 Series</span><br>
+                            <span>Colour: Black</span><br>
+                            <span>Made in: China</span><br>
+                            <span>Rated: 14.4V Ni-MH 3500mAh (battery pack)</span><br>
+                            <span>Input: 22V - 1.25A</span></p>
+                            </div><p><img src="https://i.imgur.com/hs8BuIc.jpg" alt="" width="730" loading="lazy"></p><h2 id="Forensic-Questions" data-id="Forensic-Questions"><a class="anchor hidden-xs" href="#Forensic-Questions" title="Forensic-Questions"><span class="octicon octicon-link"></span></a><span>Forensic Questions</span></h2><div class="alert alert-warning">
+                            <p><strong><span>What does it do?</span></strong><br>
+                            <span>The iRobot Roomba 500 series is an automatic robotic vacuum cleaner. It cleans the dust from a floor plan without the need for manual human control utilising spinning brushes and a vacuum.</span></p>
+                            <p><strong><span>How does it work?</span></strong><br>
+                            <span>The Roomba uses a side mounted flailing brush to push the dirt underneath the machine where two counter rotating brushes catch the dirt and push it into a vacuum which is then stored in a dust bin.</span><br>
+                            <span>The Roomba moves around a room through two cleaning modes: following the patterns of walls and bouncing off of objects and cleaning in straight lines.</span></p>
+                            <p><strong><span>How is it built?</span></strong><br>
+                            <span>On top of the Roomba there are infrared sensors which bounce light off of objects in front of it to detect them. It also has a touch sensor in its bumper so that it stops and bounces when it hits things. It also has infrared sensors underneath it to detect cliffs or stairs.</span><br>
+                            <span>Inside it uses a “piezo” sensor to detect particularly dirty patches. When the bits of dirt hit the sensor, they generate an electric impulse that let the Roomba know that a spot is particularly dirty and so it’ll retrace that spot and go slower to clean that space more thoroughly.</span></p>
+                            <p><strong><span>Why it failed, or it wasn’t used anymore?</span></strong><br>
+                            <span>Older versions of Roombas moved in a very dumb manner, in straight lines and often over already clean areas which made them very inefficient and took a long time to clean rooms. They also have small dust bins which make cleaning the bin and the brushes something you’d have to do more often than a normal vacuum cleaner.</span><br>
+                            <span>Its rechargable battery has a total life-span of 5-7 years and after the first year or two its battery will be half as good, which won’t be enough to clean an entire room. If the brushes aren’t cleaned often it’ll pull more energy to suck up the dirt and will become less gradually less efficient with time.</span></p>
+                            </div><h2 id="Steps-taken" data-id="Steps-taken"><a class="anchor hidden-xs" href="#Steps-taken" title="Steps-taken"><span class="octicon octicon-link"></span></a><span>Steps taken</span></h2><div class="alert alert-warning">
+                            <ol>
+                            <li><span>Disassembled by hand what could be taken apart by hand (the dust collector)</span></li>
+                            <li><span>Disassembled with the screws.</span></li>
+                            <li><span>Separated individual components and classified by their function.</span>
+                            <ul>
+                            <li><span>Navigation (wheels, infrared sensor, touch sensor)</span></li>
+                            <li><span>Filtration (dust collector, brushes, vacuum, gears)</span></li>
+                            <li><span>Power supply (charger pins, battery)</span></li>
+                            <li><span>Output display (screens)</span></li>
+                            <li><span>Computer (PCBs, 2 microcontrollers, buttons)</span></li>
+                            <li><span>Connections (wires)</span></li>
+                            </ul>
+                            </li>
+                            <li><span>Researched their function</span></li>
+                            <li><span>Tested the motors with the power supply</span></li>
+                            <li><span>Laid them out individually and documented</span></li>
+                            </ol>
+                            </div><p><strong><span>Dust collector components.</span></strong><br>
+                            <img src="https://media.giphy.com/media/AbMIUQbIp95HJrwDY8/giphy.gif" alt="" width="730" loading="lazy"></p><p><img src="https://i.imgur.com/irUpZip.jpg" alt="" width="730" loading="lazy"></p><p><img src="https://i.imgur.com/qsAQdHQ.jpg" alt="" width="730" loading="lazy"><br>
+                            <em><span>Test of the fan motor with a lab power supply</span></em></p><p><img src="https://media.giphy.com/media/QRsnxBY7KT6BGICgoO/giphy.gif" alt="" width="700" loading="lazy"></p><p><strong><span>“Master” Controller</span></strong><br>
+                            <img src="https://i.imgur.com/diCDima.jpg" alt="" width="730" loading="lazy"></p><p><img src="https://media.giphy.com/media/DqH1CCz5vUqzZJiTK7/giphy.gif" alt="" width="730" loading="lazy"></p><p><span>Datasheet STM8s207 : </span><a href="https://www.st.com/resource/en/datasheet/stm8s207mb.pdf" target="_blank" rel="noopener"><span>https://www.st.com/resource/en/datasheet/stm8s207mb.pdf</span></a></p><p><span>Datasheet STR7359PZ (we couln’t find the datasheet of that exact component so it is a close one):</span><a href="https://pdf1.alldatasheet.com/datasheet-pdf/view/115167/STMICROELECTRONICS/STR736FV1T7.html" target="_blank" rel="noopener"><span>https://pdf1.alldatasheet.com/datasheet-pdf/view/115167/STMICROELECTRONICS/STR736FV1T7.html</span></a></p><p><strong><span>Microscope view of the microprocessor STM8s207</span></strong><br>
+                            <img src="https://i.imgur.com/piDC2SQ.jpg" alt="" width="730" loading="lazy"></p><p><span>Looking for definitions in Internet</span><br>
+                            <span>Dc motor “RC500” 6V</span><br>
+                            <img src="https://i.imgur.com/G7KOopd.jpg" alt="" width="730" loading="lazy"></p><p><span>Why its uses a PIezoelectric in the dustbin??</span><br>
+                            <img src="https://i.imgur.com/tuQfu97.png" alt="" width="730" loading="lazy"></p><p><a href="https://www.explainthatstuff.com/how-roomba-works.html" target="_blank" rel="noopener"><span>https://www.explainthatstuff.com/how-roomba-works.html</span></a></p><p><strong><span>Classifying the parts</span></strong></p><p><img src="https://media.giphy.com/media/YEUyo7rr7wL5zHPfGN/giphy.gif" alt="" width="730" loading="lazy"></p><p><img src="https://i.imgur.com/7s6FhEg.jpg" alt="" width="730" loading="lazy"></p><p><img src="https://i.imgur.com/qV7LGrC.jpg" alt="" width="730" loading="lazy"></p><p><strong><span>Top Connector Pinout</span></strong></p><p><img src="https://i.imgur.com/kVxyOi2.png" alt="" width="730" loading="lazy"></p><p><a href="https://www.amazon.com/-/es/Cable-UART-Serial-Roomba-Cleaner/dp/B0838TGLTW" target="_blank" rel="noopener"><span>USB to Roomba Connector</span></a></p><h2 id="Results" data-id="Results"><a class="anchor hidden-xs" href="#Results" title="Results"><span class="octicon octicon-link"></span></a><span>Results</span></h2><div class="alert alert-warning">
+                            <p><strong><span>How many motors did we find inside?</span></strong></p>
+                            <ul>
+                            <li><span>5</span></li>
+                            </ul>
+                            <p><strong><span>Does it contain a computer or microcontroller?</span></strong></p>
+                            <ul>
+                            <li><span>3 big ones and 4 small ones</span></li>
+                            </ul>
+                            </div><h2 id="Conclusions" data-id="Conclusions"><a class="anchor hidden-xs" href="#Conclusions" title="Conclusions"><span class="octicon octicon-link"></span></a><span>Conclusions</span></h2><div class="alert alert-success">
+                            <p><span>Reverse engineering the iRobot Roomba 500, we could identify several deficiencies with the design and the functionality of the automatic robotic vacuum cleaner.</span></p>
+                            <p><span>As an initial observation, some components were not easily disassembled with a screwdriver and had to be torn manually. This prevents the possibility of repair past its original estimated product lifetime and relies on dependency to a central manufacturer.</span></p>
+                            <p><span>Additionally, we noticed that despite its internal filtration components, dirt and debris managed to make their way inside the controller section where debris shouldn’t go. This could contribute to a rapid deterioration of the product.</span></p>
+                            <p><span>The mechanics of the iRobot Roomba 500 lent themselves to a misuse of energy by following a random path of cleaning which would expend the rechargable battery at a faster rate than it would if it followed a more logical cleaning path. This shortened the lifespan of the rechargable battery considerably.</span></p>
+                            </div><h2 id="Opinions" data-id="Opinions"><a class="anchor hidden-xs" href="#Opinions" title="Opinions"><span class="octicon octicon-link"></span></a><span>Opinions</span></h2><div class="alert alert-warning">
+                            <p><strong><span>What do you learn?</span></strong></p>
+                            <ul>
+                            <li><span>We learnt functions of components we didn’t know such as piezoelectricity</span></li>
+                            <li><span>Testing motors with a power supply</span></li>
+                            <li><span>The logic behind the decisions that were made in deciding which sensors to use</span></li>
+                            </ul>
+                            <p><strong><span>What surprised you?</span></strong></p>
+                            <ul>
+                            <li><span>The number of sensors used to navigate (IR)</span></li>
+                            <li><span>The number of parts and pieces that were inside the iRobot.</span></li>
+                            <li><span>The dirt inside (hair, dust)</span></li>
+                            <li><span>The single random triangle screw!</span></li>
+                            <li><span>The non-accessibility of many parts of the iRobot</span></li>
+                            <li><span>Impossible to put back together after dissassembling!</span></li>
+                            </ul>
+                            <p><strong><span>Questions</span></strong></p>
+                            <ul>
+                            <li><span>How could it be made differently to be easily repaired?</span></li>
+                            </ul>
+                            </div><p><span>Update 10/11/21:</span></p><p><span>Roomba 2021</span></p><p><span>price: 1.500 euros.</span></p><p><span>-New Shape</span><br>
+                            <span>-Wifi connection</span><br>
+                            <span>-Visual simultaneous localization and mapping(SLAM)</span></p><p><span>Visual SLAM systems are also used in a wide variety of field robots. For example, rovers and landers for exploring Mars use visual SLAM systems to navigate autonomously. Field robots in agriculture, as well as drones, can use the same technology to independently travel around crop fields. Autonomous vehicles could potentially use visual SLAM systems for mapping and understanding the world around them.</span></p><p><span>One major potential opportunity for visual SLAM systems is to replace GPS tracking and navigation in certain applications. GPS systems aren’t useful indoors, or in big cities where the view of the sky is obstructed, and they’re only accurate within a few meters. Visual SLAM systems solve each of these problems as they’re not dependent on satellite information and they’re taking accurate measurements of the physical world around them.</span></p><p><img src="https://i.imgur.com/a2ppMjC.jpg" alt="" width="730" loading="lazy"></p><p><img src="https://i.imgur.com/yls02Cs.png" alt="" width="730" loading="lazy"></p><p><img src="https://i.imgur.com/VnMMRip.png" alt="" width="730" loading="lazy"></p></div>
+                                <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+
+                            <br><br>
+                              <mark><a href="https://hackmd.io/INk2gThpSkObQQ_E62gxow?view">HackMD Report</a></mark>
                           </p>
                           <br>
                             <img src="../imgs/tech-roomba.gif" alt="" style="width:px;height:600px;">
