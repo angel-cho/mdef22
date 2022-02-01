@@ -47,46 +47,14 @@
                 </nav>
                 <!-- Page content-->
                 <div class="container- ms-4 me-5">
-                    <small>&#128467; week 1-4</small>
-                      <!--<h1 class="mt-4">Designing for the Next Billion Seconds</h1>-->
-                      <h3>Digital</h3>
-                        <p>
-                          reflections
+                    <small>&#128467; 2 February 2022</small>
+                      <h1 class="mt-4">Input</h1>
+                        Reflections
                           <br>
-                            <a href=".html">challenge</a>
+                            <img src="../imgs/" alt="" style="width:400px;height:;">
                           <br>
-                          <img src="../imgs/" alt="" style="width:400px;height:;">
-                        </p>
-                    <small>&#128467; week 5-9</small>
-                      <h3>Fabrication & Production</h3>
-                        <p>
-                          reflections
-                          <br>
-                            <a href=".html">challenge</a>
-                          <br>
-                          <img src="../imgs/" alt="" style="width:400px;height:;">
-                        </p>
-                    <small>&#128467; week 10-15</small>
-                      <h3>Interactions & Communications</h3>
-                        <p>
-                          reflections
-                          <br>
-                            <a href=".html">challenge</a>
-                            <br>
-                              <img src="../imgs/" alt="" style="width:400px;height:;">
-                            </p>
-                    <small>&#128467; week 16-19</small>
-                      <h3>Infrastructure & Scale</h3>
-                        <p>
-                          reflections
-                          <br>
-                            <a href=".html">challenge</a>
-                            <br>
-                              <img src="../imgs/" alt="" style="width:400px;height:;">
-                        </p>
+                        <a href=".html">challenge</a>
                 </div>
-            </div>
-        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
