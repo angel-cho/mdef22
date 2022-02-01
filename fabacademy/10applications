@@ -47,24 +47,43 @@
                 </nav>
                 <!-- Page content-->
                 <div class="container- ms-4 me-5">
-                    <small>&#128467; 25 Jaunary 2022</small>
+                    <small>&#128467; week 1-4</small>
                       <!--<h1 class="mt-4">Designing for the Next Billion Seconds</h1>-->
-                      <h3>500 word summary</h3>
+                      <h3>Digital</h3>
                         <p>
                           reflections
+                          <br>
+                            <a href=".html">challenge</a>
+                          <br>
+                          <img src="../imgs/" alt="" style="width:400px;height:;">
+                        </p>
+                    <small>&#128467; week 5-9</small>
+                      <h3>Fabrication & Production</h3>
+                        <p>
+                          reflections
+                          <br>
+                            <a href=".html">challenge</a>
+                          <br>
+                          <img src="../imgs/" alt="" style="width:400px;height:;">
+                        </p>
+                    <small>&#128467; week 10-15</small>
+                      <h3>Interactions & Communications</h3>
+                        <p>
+                          reflections
+                          <br>
+                            <a href=".html">challenge</a>
                             <br>
                               <img src="../imgs/" alt="" style="width:400px;height:;">
-                                <br>
-                        </p>
-                          <small>&#128467; 25 Jaunary 2022</small>
+                            </p>
+                    <small>&#128467; week 16-19</small>
+                      <h3>Infrastructure & Scale</h3>
+                        <p>
+                          reflections
+                          <br>
+                            <a href=".html">challenge</a>
                             <br>
-                              <h3>500 word summary</h3>
-                                <p>
-                                  reflections
-                                <br>
-                                  <img src="../imgs/" alt="" style="width:400px;height:;">
-                                    <br>
-                                  </p>
+                              <img src="../imgs/" alt="" style="width:400px;height:;">
+                        </p>
                 </div>
             </div>
         </div>
