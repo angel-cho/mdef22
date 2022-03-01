@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Angel Cho - MDEF 2022</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="bg-saffron" id="sidebar-wrapper">
+                <div class="sidebar-heading bg-saffron mt-2 ms-4"><a href="..//index.html"><img src="../assets/smiley.gif" alt="" style="width:35px;height:35px;"></div></a>
+                <div class="list-group list-group-flush mt-4 ms-5">
+                  <a class="list-group-item list-group-item-action p-1" href="..//about.html">About</a>
+                  <a class="list-group-item list-group-item-action p-1" href="..//archive.html">Past Work</a>
+                  <a class="list-group-item list-group-item-action p-1" href="..//seminars.html">Term One</a>
+                  <a class="list-group-item list-group-item-action p-1" href="..//term2.html">Term Two</a>
+                  <a class="list-group-item list-group-item-action p-1" href="../fabacademy.html">Fab Academy</a>
+                  <a class="list-group-item list-group-item-action p-1" href="..//resources.html">Resources</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-saffron">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                              <li class="nav-item active"><a class="nav-link" href="https://www.instagram.com/angeljo.jpg/"><img src="../assets/instagram.png" height=30px/></a></li>
+                              <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/angel-jo-design/"><img src="../assets/linkedin.png" height=30px/></a></li>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#!">Action</a>
+                                        <a class="dropdown-item" href="#!">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#!">Something else here</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container- ms-4 me-5">
+                    <small>&#128467; 2 February 2022</small>
+                      <h1 class="mt-4">Computer-Controlled Cutting</h1>
+                      We learned about the history of laser cutting starting from the 1950s with the microwave application to the machines that we are using today.
+                      We reviewed the two main processes in computer aided manufacturing: additive and subtractive.
+                      Additive processes start with nothing and add material, ie. 3D machine.
+                      Subtractive processes start with the material and reduce, ie. laser cutter, vinyl, CNC.
+                        <br>
+                        <br>
+                      Materials that could be used with laser cutter: wood, cardboard, fabrics, plastics.
+                      We looked at the anatomy of the laser cutter machine and the parts that are crucial for functioning.
+                      Design considerations: tolerance, kerf: accounting for material that is burnt,
+                      Three golden rules of laser cutter: focus the material, check power, frequency and speed, and turn on extraction.
+                        <br>
+                        <br>
+                      <b>Assignment:</b>
+                        <br>
+                      First, I made a quick test on the laser cutter with an AI logo I already had of my partner's hot sauce brand.
+                      The vinyl cutter was very straight forward and I was glad to have tried it. I would like to continue to use it for future projects.
+                        <br>
+                        <br>
+                          <img src="../imgs/t2-fa-w3-1.gif" alt="image" height="600" />
+                        <br>
+                        <br>
+                      Initially, I wanted to create a form that could be useful or related to my topics of interests at MDEF.
+                      Since I was completely green in working with 3D modeling softwares, I consulted a few of my classmates to decide on which software I should start with.
+                      After some thought, I decided to start with Rhino 3D and Grasshopper because it seemed most useful in the long run and compatible with various machines at Fab Lab BCN.
+                        <br>
+                        <br>
+                      Although I wanted to make something relevant to my interests, I realized I was running behind in spending too much time conceptualizing what to make (also due to covid), and needed to just try creating and cutting something simple to understand the process first.
+                      Joaquin helped me start a basic Grasshopper shape: a triangle with divots in it, but we ran into an issue in finding the Grasshopper command that detects a line's midpoint.
+                      We struggled to find this function, and due to time limitations (my laser cutter appointment was coming up), we decided to try and figure it out later but in the meantime use Rhino to create the shape.
+                      I made a simple hexagon shape and a rectangle on one of the edges. I used the 'array' command to distribute the rectangle divots at the midpoints of each of the edges.
+                      Since we had already tested the kerf of the laser cutter and doing press-fit with the MDF, I knew the sidth of the rectangle had to be 2.4mm wide for a perfect fit.
+                        <br>
+                        <br>
+                      At the laser cutter, I made a test of two shapes first and tried joining them.
+                      Then I realized that the lengths of the rectangle divots were too long, as when they were fit together, the length multiplied and went over the center of the piece.
+                      This created a problem because I wasn't able to fit multiple pieces in one.
+                      I had to quickly change the length of the rectangles, and I wished I had figured out the parametric design in Grasshopper.
+                      I manually modified the length from 25mm to 12mm in Rhino and made the pieces smaller as well, so to take up less space on the MDF board.
+                      I was happy with the way the pieces turned out.
+                      Although they were simple, because of their simplicity they provided many options for joining and creating different shapes.
+                        <br>
+                        <br>
+                          <img src="../imgs/t2-fa-w3-2.gif" alt="image" height="600" />
+                        <br>
+                        <br>
+                </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
