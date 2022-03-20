@@ -11439,7 +11439,9 @@ h1 {
 /* Content */
 .content {
   background-color:;
-  padding: 10px;
+  padding: 5px;
+  padding-top: 30px;
+  padding-left: 10px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
