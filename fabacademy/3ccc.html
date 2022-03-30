@@ -22,7 +22,10 @@
                   <a class="list-group-item list-group-item-action p-1" href="..//seminars.html">Term One</a>
                   <a class="list-group-item list-group-item-action p-1" href="..//term2.html">Term Two</a>
                   <a class="list-group-item list-group-item-action p-1" href="../fabacademy.html">Fab Academy</a>
+                  <a class="list-group-item list-group-item-action p-1" href="thesis.html">Thesis</a>
+                  <!--
                   <a class="list-group-item list-group-item-action p-1" href="..//resources.html">Resources</a>
+                -->
                 </div>
             </div>
             <!-- Page content wrapper-->
@@ -63,30 +66,31 @@
                         <br>
                       <b>Assignment:</b>
                         <br>
-                      First, I made a quick test on the laser cutter with an AI logo I already had of my partner's hot sauce brand.
-                      The vinyl cutter was very straight forward and I was glad to have tried it. I would like to continue to use it for future projects.
+                      The vinyl cutter was straight forward to use.
+                      I printed 3 different sizes of a logo I had on my computer and tested the application of each on a glass surface.
                         <br>
                         <br>
                           <img src="../imgs/t2-fa-w3-1.gif" alt="" width="600px;">
                         <br>
                         <br>
-                      Initially, I wanted to create a form that could be useful or related to my topics of interests at MDEF.
-                      Since I was completely green in working with 3D modeling softwares, I consulted a few of my classmates to decide on which software I should start with.
+                      Since I am completely new to working with 3D modeling softwares, I consulted a few of my classmates to decide on which software I should start with.
                       After some thought, I decided to start with Rhino 3D and Grasshopper because it seemed most useful in the long run and compatible with various machines at Fab Lab BCN.
                         <br>
                         <br>
                       Although I wanted to make something relevant to my interests, I realized I was running behind in spending too much time conceptualizing what to make (also due to covid), and needed to just try creating and cutting something simple to understand the process first.
-                      Joaquin helped me start a basic Grasshopper shape: a triangle with divots in it, but we ran into an issue in finding the Grasshopper command that detects a line's midpoint.
-                      We struggled to find this function, and due to time limitations (my laser cutter appointment was coming up), we decided to try and figure it out later but in the meantime use Rhino to create the shape.
-                      I made a simple hexagon shape and a rectangle on one of the edges. I used the 'array' command to distribute the rectangle divots at the midpoints of each of the edges.
+                      With Joaquin's help, I started exploring Grasshopper and created a simple polygon with six sides.
+                      We used the "DeBrep" function to deconstruct the polygon into a single triangle component (three lines).
+                      Once this triangle shape was isolated, we located the midpoint of the triangle, and centered the rectangle at the midpoint.
                       Since we had already tested the kerf of the laser cutter and doing press-fit with the MDF, I knew the sidth of the rectangle had to be 2.4mm wide for a perfect fit.
+                      Then we used the difference of the triangle and rectangle to "cut out" the shape we needed and deconstructed them further so we could array polar them 5x around to reform the six sides of the hexagon.
+                        <br>
+                        <br>
+                          <img src="../imgs/faw3-parametric.gif" width="600px;">
                         <br>
                         <br>
                       At the laser cutter, I made a test of two shapes first and tried joining them.
                       Then I realized that the lengths of the rectangle divots were too long, as when they were fit together, the length multiplied and went over the center of the piece.
-                      This created a problem because I wasn't able to fit multiple pieces in one.
-                      I had to quickly change the length of the rectangles, and I wished I had figured out the parametric design in Grasshopper.
-                      I manually modified the length from 25mm to 12mm in Rhino and made the pieces smaller as well, so to take up less space on the MDF board.
+                      I was able to modify the length in Grasshopper and made the pieces smaller to take up less space on the MDF board.
                       I was happy with the way the pieces turned out.
                       Although they were simple, because of their simplicity they provided many options for joining and creating different shapes.
                         <br>
