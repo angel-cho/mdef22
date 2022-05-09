@@ -58,19 +58,31 @@
                         It was challenging because my software had display issues, so I had to uninstall and reinstall it in the middle of the demo.
                           <br>
                           <br>
-                        With the advice of faculty on where to start, I researched a drawing robot (something I've been interested in making for a long time) and found a board design that I could try replicating.
-                        The board consisted of IR lights and receivers, power, ground, and resistors.
-                        It was a simple design to start with which I could understand.
-                        I had trouble finding the parts on the fab library, ...
+                            <img src="../imgs/" alt="" style="width:600px;height:;">
                           <br>
                           <br>
-                            <img src="../imgs/" alt="" style="width:400px;height:;">
+                      <b>Assignment:</b>
+                        <br>
+                        I chose to make a simple exercise to create a PCB board that connects a LED light connected with a light sensor.
+                        In order to test the connections, I started with creating the circuit on a breadboard using this <a href="https://arduinogetstarted.com/tutorials/arduino-light-sensor">Arduino reference</a>.
+                        I had to adjust the values of the light sensor in the code, but otherwise it was pretty straight forward.
                           <br>
                           <br>
-                        Assignment:
-                        Week 6 - Electronic design
-                        Design a PCB board also called breakout-board for your ESP32 HUZZAH 32 microcontrollers ( or other board that you want to use rapberri pi ,etc) that allows you to connect an input (sensor) or an output (actuator) to your commercial board without cables.
-                        Include the design files in your webpage and explain well the process on how you did it.
+                            <img src="../imgs/breadboard.jpg" alt="" style="width:600px;height:;">
+                          <br>
+                          <br>
+                        Once I had a successful circuit, I used KiCad to start to recreate it.
+                        First, I laid out the components found in the fab library in the schematics window.
+                        Then created the connections in layout view.
+                        There, I had a bit of trouble with wires crossing and had to return to schematic view and change the pins on the ESP board.
+                        I also made the thickness of the connections wider, so it would be surely milled.
+                        Finally, I exported the file into a svg file and opened it in illustrator, where I reversed the black and white and assigned layers.
+                        Ready to mill my first PCB!
+                          <br>
+                          <br>
+                            <img src="../imgs/kicad.gif" alt="" style="width:600px;height:;">
+                          <br>
+                          <br>
 
                 </div>
         <!-- Bootstrap core JS-->
