@@ -21,6 +21,9 @@
                   <a class="list-group-item list-group-item-action p-1" href="..//archive.html">Past Work</a>
                   <a class="list-group-item list-group-item-action p-1" href="..//seminars.html">Term One</a>
                   <a class="list-group-item list-group-item-action p-1" href="..//term2.html">Term Two</a>
+                  <a class="list-group-item list-group-item-action p-1" href="term3.html">Term Three</a>
+                  <a class="list-group-item list-group-item-action p-1" href="..//fabacademy.html">Fab Academy</a>
+                  <a class="list-group-item list-group-item-action p-1" href="..//thesis.html">Thesis</a>
                   <!--
                   <a class="list-group-item list-group-item-action p-1" href="../fabacademy.html">Fab Academy</a>
                   <a class="list-group-item list-group-item-action p-1" href="..//resources.html">Resources</a>
@@ -53,36 +56,31 @@
                       <br>
                       <br>
                     <b>Assignment:</b>
-                    Week 10 & 13 - Output devices - Input Devices
 
-                    I decided to team up with Tatiana on this task, to mill and solder the board that I had previously designed for Week 6 Electronic Design.
-
-
+                    For this assignment, I decided to team up with Tatiana to mill and solder the board that I had previously designed for Week 6 Electronic Design.
                     The board I designed was an attachment to the ESP32 feather, which could allow me to connect a light sensor and an LED. We began by exporting the Kicad schematic into Illustrator and separating the layers into the steps we needed to take while milling: cutting the interior design, drilling through the holes and lastly cutting the edges. Each layer was exported into a separate PNG and later imported into MODS to create the gcode file.
-
-
-
+                      <br>
+                      <br>
                     We encountered some problems with the website, mostly due to us not remembering how to use certain functions:
-
-                    -setting up the 0;0 origin: we did not realise it was set to a default of 10;10;10, which caused us to mill in the air as opposed to the PCB material.
-                    -full black and white layout: we realised some of the objects were not fully black, but rather a very dark grey, which made it undetectable by the software and thus did not cut those points.
-                    -rotating the file so that it was in the correct axis.
-                    -making sure to have 1000pp quality to get full precision.
-
-
-                    --- screenshots of PNG files, software, and gcode files
-
-
-
-                    Milling the PCB
-
-
+                      <ul>
+                      <li>setting up the 0;0 origin: we did not realise it was set to a default of 10;10;10, which caused us to mill in the air as opposed to the PCB material.</li>
+                        <li>full black and white layout: we realised some of the objects were not fully black, but rather a very dark grey, which made it undetectable by the software and thus did not cut those points.</li>
+                      <li>rotating the file so that it was in the correct axis.</li>
+                      <li>making sure to have 1000pp quality to get full precision.</li>
+                    </ul>
+                      <br>
+                      <br>
+                        <img src="../imgs/faw10-01.gif" alt="" style="width:600px;height:;">
+                      <br>
+                      <br>
+                  <b>Milling the PCB</b>
                     Cleaned up the wood (which needs to be sanded/changed because it was way too rough!!)
                     Taped the PCB with double sided tape (we did not put enough on the first try which made the PCB move a lot, but luckily it was only a test)
                     Use Vpanel for SRM-20 machine
                     Place the 1/64inch endmill for the internal Milling
                     Adjust x, y, z axis coordinates (unscrew end mill when close to the board, allowing it to fall perfectly, then tighten it again)
                     Press cut on the program and select the right file, making sure that the previous files were deleted (we accidentally cut somebody else's file at first)
+                  <b>Soldering the PCB</b>
 
                 </div>
         <!-- Bootstrap core JS-->
