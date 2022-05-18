@@ -45,7 +45,7 @@
                 </nav>
                 <!-- Page content-->
                 <div class="container- ms-4 me-5">
-                    <small>&#128467; 30 March 2022</small>
+                    <small>&#128467; Week 10 & 13</small>
                       <h1 class="mt-4">Output & Input</h1>
                     I decided to team up with Tatiana to mill and solder the board that I previously designed for Week 6 of Electronic Design.
                     The board I designed was an attachment to the ESP32 feather, which could allow me to connect a light sensor and an LED.
@@ -55,6 +55,8 @@
                       <br>
                         <img src="../imgs/faw10-01.gif" alt="" style="width:600px;height:;">
                       <br>
+                      <br>
+                    Milling:
                       <br>
                     We used the Vpanel software to mill the PCB on the Roland SRM-20 machine.
                     I fit the 1/64" end mill and tightened it into the milling machine, set the x,y,z axis coordinates, and imported the files in order nto the machine.
@@ -66,7 +68,28 @@
                         <img src="../imgs/faw10-02.gif" alt="" style="width:600px;height:;">
                       <br>
                       <br>
-                    We
+                    Soldering:
+                      <br>
+                    With help from the tutors, I found the components to solder onto the PCB which were available in the Fab Lab.
+                    Most of the pieces I needed were in the Fab Lab except for the 220 Ohm resistor, which I exchanged for one just above which was 490 Ohms.
+                    The phototransistor sensor and the LED sensor had tiny green marks on them which indicated which side should connect to ground.
+                    I referred to their specific datasheets online to see how they should be mounted onto the PCB board.
+                    The datasheet of the phototransistor was a bit confusing and I had to solder it on agin in the opposite direction after the first test.
+                    In addition to the sensor, led light, and resistors, I also soldered the female pin headers onto the PCB board so it would stack onto my ESP32.
+                      <br>
+                      <br>
+                        <img src="../imgs/faw10-03.gif" alt="" style="width:600px;height:;">
+                      <br>
+                      <br>
+                    Coding:
+                      <br>
+                    I used a simple Arduino code for a phototransistor (light detector) that connects to an LED, and would turn the LED on when the light is "low", and off when the light is "high".
+                    I modified the pin numbers and also added a "SerialRead" command with a delay so I can read the amount of light (numbers) the phototransistor is sensing.
+                    In order to make sure the code was working, we shined a bright light on the phototransistor and made sure the numbers in the serial port went up.
+                    It took us a couple attempts to make the code work but once we adjusted the variable and used a different USBC cable to connect the ESP32, we were able to make the connection.
+                      <br>
+                      <br>
+                        <img src="../imgs/touch.gif" alt="" style="width:600px;height:;">
                       <br>
                       <br>
                     Key learnings:
