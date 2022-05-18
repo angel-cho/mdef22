@@ -48,29 +48,36 @@
                     <small>&#128467; 30 March 2022</small>
                       <h1 class="mt-4">Output & Input</h1>
                     I decided to team up with Tatiana to mill and solder the board that I previously designed for Week 6 of Electronic Design.
-                    The board I designed was an attachment to the ESP32 feather, which could allow me to connect a light sensor and an LED. We began by exporting the Kicad schematic into Illustrator and separating the layers into the steps we needed to take while milling: cutting the interior design, drilling through the holes and lastly cutting the edges. Each layer was exported into a separate PNG and later imported into MODS to create the gcode file.
-                      <br>
-                      <br>
-                    We encountered some problems with the website, mostly due to us not remembering how to use certain functions:
-                      <ul>
-                      <li>setting up the 0;0 origin: we did not realise it was set to a default of 10;10;10, which caused us to mill in the air as opposed to the PCB material.</li>
-                        <li>full black and white layout: we realised some of the objects were not fully black, but rather a very dark grey, which made it undetectable by the software and thus did not cut those points.</li>
-                      <li>rotating the file so that it was in the correct axis.</li>
-                      <li>making sure to have 1000pp quality to get full precision.</li>
-                    </ul>
+                    The board I designed was an attachment to the ESP32 feather, which could allow me to connect a light sensor and an LED.
+                    We began by exporting the Kicad schematic into Illustrator and separating the layers into the steps we needed to take while milling: cutting the interior design, drilling through the holes and lastly cutting the edges.
+                    Each layer was exported into a separate PNG and later imported into MODS to create the gcode file.
                       <br>
                       <br>
                         <img src="../imgs/faw10-01.gif" alt="" style="width:600px;height:;">
                       <br>
                       <br>
-                  <b>Milling the PCB</b>
-                    Cleaned up the wood (which needs to be sanded/changed because it was way too rough!!)
-                    Taped the PCB with double sided tape (we did not put enough on the first try which made the PCB move a lot, but luckily it was only a test)
-                    Use Vpanel for SRM-20 machine
-                    Place the 1/64inch endmill for the internal Milling
-                    Adjust x, y, z axis coordinates (unscrew end mill when close to the board, allowing it to fall perfectly, then tighten it again)
-                    Press cut on the program and select the right file, making sure that the previous files were deleted (we accidentally cut somebody else's file at first)
-                  <b>Soldering the PCB</b>
+                    We used the Vpanel software to mill the PCB on the Roland SRM-20 machine.
+                    I fit the 1/64" end mill and tightened it into the milling machine, set the x,y,z axis coordinates, and imported the files in order nto the machine.
+                    We first cut the "Trace" file for the etching of the copper on the board.
+                    Then we replaced the end mill bit to 1/32" to proceed to cut the "Outline" and "Drill" files for the PCB board and holes where the ESP32 would stack onto.
+                    We had made a few mistukes
+                      <br>
+                      <br>
+                        <img src="../imgs/faw10-02.gif" alt="" style="width:600px;height:;">
+                      <br>
+                      <br>
+                    We
+                      <br>
+                      <br>
+                    Key learnings:
+                    <ul>
+                      <li>setting up the 0;0 origin: we did not realise it was set to a default of 10;10;10, which caused us to mill in the air as opposed to the PCB material.</li>
+                      <li>100% CMYK layout. Some of the graphics were not 100% C, M, Y, and K, which made it undetectable by the software and thus did not cut those points.</li>
+                      <li>making sure to export at 1000pp quality to get full precision.</li>
+                      <li>making sure to tape the entire back of the PCB board and firmly pressed onto the milling board</li>
+                    </ul>
+
+
 
                 </div>
         <!-- Bootstrap core JS-->
