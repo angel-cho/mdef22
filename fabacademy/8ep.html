@@ -45,7 +45,7 @@
                 </nav>
                 <!-- Page content-->
                 <div class="container- ms-4 me-5">
-                    <small>&#128467; 16 March 2022</small>
+                    <small>&#128467; Week 8</small>
                       <h1 class="mt-4">Embeded Programming</h1>
                         This week, we went over the history and foundations of a computer from the very beginning. We started discussing the difference between analog and digital forms of machines and the cause of this transition, which was based on scalability and accuracy over time. We continued comparing differences between specific functions of components; the microcontrollers v. microprocessors and operative systems v. firmware, in order to understand how to make efficient choices when designing our own electronics.
                           <br>
@@ -61,14 +61,52 @@
                           <li>always the same answers to same questions</li>
                           <li>when something goes wrong it’s human error or machine failure</li>
                         </ul>
-                          <br>
-                            <img src="../imgs/" alt="" style="width:600px;height:;">
-                          <br>
-                          <br>
+
                         <b>Assignment:</b>
-                        Week 8 - Embedded Programming
+                          I coded an LED light to turn on and off depending on the light the phototransistor sensor was detecting.
+                          This assignment is an extension of my input/output task, where I designed, milled, soldered, and coded my own PCB.
+                          I made a simple arduino code based off of examples.
+                          In the first part of the code, I define the constants: the pins and the analog threshold (for the sensor function).
+                          In the following section, I set up the light sensor to output mode and add a serial begin code which will print the values of what the sensor is detecting (light).
+                          After the setup, I define what the code will be doing on a loop: reading the value of the sensor and printing it,
+                          and if the value is greater than the anaglog threshold (500) defined in the first part of the code, set the LED pin to high or on,
+                          if the value is lesser than the analog threshold, set the LED to low or off.
+                            <br>
+                            <br>
+                          The arduino code below:<br>
+                              const int LIGHT_SENSOR_PIN = A7; // Arduino pin connected to light sensor's  pin <br>
+                              const int LED_PIN          = 5;  // Arduino pin connected to LED's pin <br>
+                              const int ANALOG_THRESHOLD = 500; <br> <br>
 
+                              int analogValue; <br> <br>
 
+                              void setup() { <br>
+                                pinMode(LED_PIN, OUTPUT); // set arduino pin to output mode <br>
+                                Serial.begin(9600); <br>
+                              } <br> <br>
+
+                              void loop() { <br>
+                                analogValue = analogRead(LIGHT_SENSOR_PIN); // read the input on analog pin <br>
+                                Serial.println(analogValue); <br> <br>
+
+                                if(analogValue < ANALOG_THRESHOLD) <br>
+                                  digitalWrite(LED_PIN, HIGH); // turn on LED <br>
+                                else <br>
+                                  digitalWrite(LED_PIN, LOW);  // turn off LED <br> <br>
+
+                                 delay(100); <br>
+                              } <br>
+                        <br>
+                        <br>
+                          <img src="../imgs/faw8-2.jpg" alt="" style="width:600px;height:;">
+                        <br>
+                        <br>
+                          <img src="../imgs/touch.gif" alt="" style="width:600px;height:;">
+                        <br>
+                        <br>
+                          <img src="../imgs/values.gif" alt="" style="width:600px;height:;">
+                        <br>
+                        <br>
                       </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
