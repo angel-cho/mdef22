@@ -68,14 +68,61 @@
                     <b>Assignment:</b>
                       <br>
                     Paula and I got together to make a serial communication with two ESP 32 boards and some wires.
-                    We started with a simple example of an UART connection (using TX and RX pins) to make a connection between our boards, which we could control from our Arduino serial ports.
-                    Connecting the boards was pretty straight forward. Using a fes wires with female ends, we connected the TX to the RX of the other board and the ground to ground.
-                    Then we con
-                    <br>
-                    <br>
-                      <img src="../imgs/faw14-2.gif" alt="" style="width:600px;height:;">
-                    <br>
-                    <br>
+                    We started with a simple example of an UART connection, using the TX and RX pins on our board.
+                    We decided to make our boards send and receive messages to and from eachother, which we could control from our Arduino serial ports.
+                    Connecting the boards was pretty straight forward, we used wires with female ends to connect the TX pins to the RX pins of the other board and the ground to ground.
+                      <br>
+                      <br>
+                        <img src="../imgs/faw14-2.gif" alt="" style="width:600px;height:;">
+                      <br>
+                      <br>
+                    Then we started with a simple code in arduino to make sure we could send a message from the "host" to the "device".
+                    Once we had this connection established, we added more to the code to make it more interesting.
+                    The messages were sending using ASCII codes (American Standard Code for Information Interchange, a set of digital codes representing letters, numerals, and other symbols, widely used as a standard format in the transfer of text between computers),
+                    so we added "char" before the line of code to read the "incomingByte" to translate the numbers into characters.
+                    We also wanted to test if we were able to add our individual names so we can identify which person was sending the message (essentially creating a chat box).
+                    We were able to add a line that printed our names (or whatever we decided) along with our message, but the name was not placed before but following our message.
+                    It wasn't clear why the name wouldn't print before the message, so we asked for Jeremy's help in modifying this code.
+                    Essentially, we had to separate the lines of code that would print our names from the lines of code that would print our messages,
+                    and place it before the message codes within the "void loop".
+                      <br>
+                      <br>
+                    Our final code:<br><br>
+                    bool newline = true;<br><br>
+
+                    void setup() {<br>
+                      Serial.begin(9600);<br>
+                      Serial1.begin(9600);<br>
+                    }<br><br>
+
+                    void loop() {<br>
+                      if (Serial1.available() > 0) {<br>
+                        if (newline == true){<br>
+                          Serial.print("Paula: ");<br>
+                          newline = false;<br>
+                        }<br>
+                        char incomingByte = Serial1.read();<br>
+                        if (incomingByte == 13) {<br>
+                          newline=true;<br>
+                          Serial.println();<br>
+                        }<br>
+                        Serial.print (incomingByte);<br>
+                      }<br><br>
+
+                      if (Serial.available() > 0) {<br>
+                        if (newline == true){<br>
+                          Serial.print("Angel: ");<br>
+                          newline = false;<br>
+                        }<br>
+                        char incomingByte = Serial.read();<br>
+                        Serial1.write(incomingByte);<br>
+                        if (incomingByte == 13) {<br>
+                          newline=true;<br>
+                          Serial.println();<br>
+                        }<br>
+                        Serial.print(incomingByte);<br>
+                      }<br>
+                    }<br><br>
 
                 </div>
         <!-- Bootstrap core JS-->
