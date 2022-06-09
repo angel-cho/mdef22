@@ -47,34 +47,40 @@
                 <div class="container- ms-4 me-5">
                     <small>&#128467; 11 May 2022</small>
                       <h1 class="mt-4">Wildcard Week: Robotics</h1>
-
-                      In the wildcard week, we learned about robotics and in particular the robotic arm.
-
-                       robot is mainly defined by size, maximum reach, and payload.
-                      The three main functions are laser cutting, 3D printing, and CNC machine.
-                      Robotic arms are mostly 6 axis but can be 5 to 9, depending on the rotation of the surface which could add 3 more additional axis.
-                      Locate planes instead of points in space.
-                      Parameters are speed, approximation, input/outputs, and repeatability.
-                      Approximation is when a point get acknowledged of being reached. Smaller is more accurate.
-                      Repeatability refers to the robots ability to repeat the same motion thousands of times, while not offsetting from the first position.
+                        In the wildcard week, we learned about robotics and how the robotic arm works.
+                        The three main functions of a robtoic arm are laser cutting, 3D printing, and CNC milling.
+                        Robotic arms are mostly 6 axis but can be 5 to 9, depending on the rotation of the surface which could add 3 more additional axis.
+                        The arms locate planes instead of points in space. Which is something we must consider when creating a file in Grasshopper and Rhino.
+                        We are able to control th parameters of speed, approximation, input/outputs, and repeatability.
+                        Approximation is when a point get acknowledged of being reached. Smaller is more accurate.
+                        Repeatability refers to the robots ability to repeat the same motion thousands of times, while not offsetting from the first position.
                         <br>
                         <br>
-                        References
+                        References:
                         <ul>
                           <li><a href="http://mataerial.com">Mataerial</a> (3D antigravity clay printing robot)</li>
                           <li><a href="https://nagami.design/en/">Nagami Design</a></li>
                         </ul>
                       <br>
                   <b>Assignment:</b>
-                    <br>
-                  I used the robotic arm to test 3D printing with clay. 
-
+                    I used to robotic arm to test print with clay.
+                    I wanted to learn the process of setting up and using the arm, and also experiment with the process of printing clay and on a revolving wheel which I would interact with at the same time.
+                    I imagined being able to control the speed and direction of the wheel, creating variations in form, while the robot was moving in a consistent circle, printing the clay.
+                    Pippa was printing with the arm as well, so we went through the set-up process toghether.
+                    We used a grasshopper code and plugin which allowed us to load the robotic arm (the model which IaaC owned), and set up my simple cylindrical form.
+                    Since the robot recognizes planes, we had to change the locations and planes so it was within reach and roatation of the arm.
+                    Once we got the code set up, Eduardo taught us how to calibrate the arm using points on the table and operate the arm using the controller.
+                    Finally, we loaded the g-code into the robotic arm and tested the printing.
+                    In my g-code I had set the z-axis too high above the table, which made the string of clay very loose as it reached the table.
+                    The experiment didn't turn out the way I imagined, but since I had limited time with the robot, I took it as a learning lesson for the next round.
                   <br>
                   <br>
                     <img src="../imgs/faw16wildcard1.gif" alt="" style="width:600px;height:;">
                   <br>
                   <br>
-
+                    <img src="../imgs/faw16-roboticarm.gif" alt="" style="width:600px;height:;">
+                  <br>
+                  <br>
                 </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
